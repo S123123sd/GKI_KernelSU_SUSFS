@@ -9,7 +9,7 @@ on:
     inputs:
       kernelsu_variant:
         description: "选择 KernelSU"
-        required: true
+        required: false
         type: choice
         options:
           - Official
@@ -19,7 +19,7 @@ on:
         default: SukiSU
       kernelsu_branch:
         description: "选择 ksu 分支"
-        required: true
+        required: false
         type: choice
         options:
           - Stable(标准)
@@ -37,9 +37,9 @@ on:
         default: true
       use_kpm:
         description: '是否开启KPM功能?'
-        required: true
+        required: false
         type: boolean
-        default: true
+        default: false
 jobs:
 
   build-kernel-a13-5-15:
